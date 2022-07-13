@@ -1,0 +1,5 @@
+<app-user-filter [userId]="userIdSelected" (userIdSelectedEvent)="onUserIdSelected($event)"></app-user-filter>
+<h2>Albums:</h2>
+<mat-card class="mat-elevation-z8" *ngFor="let album of albumsData">
+  <span>{{ album.title }}</span>
+</mat-card>

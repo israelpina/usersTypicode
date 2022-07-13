@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Comments</h1>
+<div class="comments-container">
+  <mat-card class="mat-elevation-z4" *ngFor="let comment of commentsData">
+    <mat-card-title>{{comment.name}}</mat-card-title>
+    <mat-card-subtitle>{{comment.email}}</mat-card-subtitle>
+    <mat-card-content>
+      <p>{{comment.body}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

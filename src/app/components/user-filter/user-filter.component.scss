@@ -1,0 +1,14 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+
+  button {
+    height: 52px;
+    top: -4px;
+  }
+}

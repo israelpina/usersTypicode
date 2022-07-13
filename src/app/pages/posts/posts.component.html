@@ -1,0 +1,14 @@
+<app-user-filter [userId]="userIdSelected" (userIdSelectedEvent)="onUserIdSelected($event)"></app-user-filter>
+<div class="cards-container">
+  <mat-card class="example-card mat-elevation-z8" *ngFor="let post of postsData">
+    <mat-card-title>{{post.title}}</mat-card-title>
+    <mat-card-content>
+      <p>{{post.body}}</p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-mini-fab color="default" (click)="openDialogComments(post.id)">
+        <mat-icon>comment</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
